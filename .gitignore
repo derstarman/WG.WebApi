@@ -3,3 +3,15 @@
 ################################################################################
 
 *.user
+/Wargaming.WebAPI.Common/bin/Debug
+/Wargaming.WebAPI.Common.Tests/bin/Debug
+/Wargaming.WebAPI.Common.Tests/obj/Debug
+/Wargaming.WebAPI.Common/obj/Debug
+/Wargaming.WebAPI.Tests/bin/Debug
+/Wargaming.WebAPI.Tests/obj/Debug
+/Wargaming.WebAPI.WoT/bin/Debug
+/Wargaming.WebAPI.WoT/obj/Debug
+/Wargaming.WebAPI.WoT.Tests/bin/Debug
+/Wargaming.WebAPI.WoT.Tests/obj/Debug
+/WNEfficiency/bin/Debug
+/WNEfficiency/obj/Debug

@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A178BCF0-E305-42A0-A231-1D3985737212}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Wargaming.WebAPI.Common</RootNamespace>
+    <AssemblyName>Wargaming.WebAPI.Common</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="project.json" />
+    <!-- A reference to the entire .NET Framework is automatically included -->
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Accounts\ContractDefinitions.cs" />
+    <Compile Include="Accounts\Model\Account.cs" />
+    <Compile Include="Accounts\Model\AccountInformation.cs" />
+    <Compile Include="Accounts\Model\AccountPrivateInformation.cs" />
+    <Compile Include="Accounts\Requests\AccoutInformationRequest.cs" />
+    <Compile Include="Accounts\Requests\AccoutListRequest.cs" />
+    <Compile Include="Accounts\Responses\AccoutInformationResponse.cs" />
+    <Compile Include="Accounts\Responses\AccoutListResponse.cs" />
+    <Compile Include="Clans\ContractDefinitions.cs" />
+    <Compile Include="Clans\Model\Clan.cs" />
+    <Compile Include="Clans\Model\ClanEmblems.cs" />
+    <Compile Include="Clans\Model\ClanGlossary.cs" />
+    <Compile Include="Clans\Model\ClanInformation.cs" />
+    <Compile Include="Clans\Model\ClanMember.cs" />
+    <Compile Include="Clans\Model\ClanMemberInformation.cs" />
+    <Compile Include="Clans\Model\ClanMessageBoardEntry.cs" />
+    <Compile Include="Clans\Model\ClanPrivateInformation.cs" />
+    <Compile Include="Clans\Requests\ClanGlossaryRequest.cs" />
+    <Compile Include="Clans\Requests\ClanInformationRequest.cs" />
+    <Compile Include="Clans\Requests\ClanListRequest.cs" />
+    <Compile Include="Clans\Requests\ClanMemberInfoRequest.cs" />
+    <Compile Include="Clans\Requests\ClanMessageBoardRequest.cs" />
+    <Compile Include="Clans\Responses\ClanGlossaryResponse.cs" />
+    <Compile Include="Clans\Responses\ClanInformationResponse.cs" />
+    <Compile Include="Clans\Responses\ClanListResponse.cs" />
+    <Compile Include="Clans\Responses\ClanMemberInfoResponse.cs" />
+    <Compile Include="Clans\Responses\ClanMessageBoardResponse.cs" />
+    <Compile Include="League\Model\Enums\StatisticsOrderType.cs" />
+    <Compile Include="League\Model\Enums\TeamSearchType.cs" />
+    <Compile Include="League\Model\Enums\TournamentType.cs" />
+    <Compile Include="League\Model\HallOfFameEntry.cs" />
+    <Compile Include="League\Model\HallOfFameValue.cs" />
+    <Compile Include="League\Model\League.cs" />
+    <Compile Include="League\Model\LeaguePlayer.cs" />
+    <Compile Include="League\Model\LeaguePlayerInformation.cs" />
+    <Compile Include="League\Model\LeaguePlayerStatistics.cs" />
+    <Compile Include="League\Model\Season.cs" />
+    <Compile Include="League\Model\Stage.cs" />
+    <Compile Include="League\Model\Team.cs" />
+    <Compile Include="League\Model\TeamInformation.cs" />
+    <Compile Include="League\Model\TeamSocialNetworks.cs" />
+    <Compile Include="League\Model\TeamSponsor.cs" />
+    <Compile Include="League\Model\TeamStatistics.cs" />
+    <Compile Include="League\Model\Tournament.cs" />
+    <Compile Include="League\Model\TournamentBracket.cs" />
+    <Compile Include="League\Model\TournamentBracketMatch.cs" />
+    <Compile Include="League\Model\TournamentBracketNextMatch.cs" />
+    <Compile Include="League\Model\TournamentMatch.cs" />
+    <Compile Include="League\Requests\HallOfFameListRequest.cs" />
+    <Compile Include="League\Requests\LeagueListRequest.cs" />
+    <Compile Include="League\Requests\LeaguePlayerInformationRequest.cs" />
+    <Compile Include="League\Requests\LeaguePlayerListRequest.cs" />
+    <Compile Include="League\Requests\TeamInformationRequest.cs" />
+    <Compile Include="League\Requests\TeamListRequest.cs" />
+    <Compile Include="League\Requests\TournamentBracketListRequest.cs" />
+    <Compile Include="League\Requests\TournamentListRequest.cs" />
+    <Compile Include="League\Requests\TournamentMatchListRequest.cs" />
+    <Compile Include="League\Responses\HallOfFameListResponse.cs" />
+    <Compile Include="League\Responses\LeagueListResponse.cs" />
+    <Compile Include="League\Responses\LeaguePlayerInformationResponse.cs" />
+    <Compile Include="League\Responses\LeaguePlayerListResponse.cs" />
+    <Compile Include="League\Responses\TeamInformationResponse.cs" />
+    <Compile Include="League\Responses\TeamListResponse.cs" />
+    <Compile Include="League\Responses\TournamentBracketListResponse.cs" />
+    <Compile Include="League\Responses\TournamentListResponse.cs" />
+    <Compile Include="League\Responses\TournamentMatchListResponse.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Servers\ContractDefinitions.cs" />
+    <Compile Include="Servers\Model\Server.cs" />
+    <Compile Include="Servers\Requests\ServerListRequest.cs" />
+    <Compile Include="Servers\Responses\ServerListResponse.cs" />
+    <Compile Include="League\ContractDefinitions.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Wargaming.WebAPI\Wargaming.WebAPI.csproj">
+      <Project>{7e2f3a0b-acf6-481c-a465-b234ec6c3a89}</Project>
+      <Name>Wargaming.WebAPI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

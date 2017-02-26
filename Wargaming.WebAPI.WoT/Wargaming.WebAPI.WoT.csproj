@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{960AFC74-4007-4CFE-B588-BDB9C9DAE9DE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Wargaming.WebAPI.WoT</RootNamespace>
+    <AssemblyName>Wargaming.WebAPI.WoT</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="project.json" />
+    <!-- A reference to the entire .NET Framework is automatically included -->
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Authentication\ContractDefinitions.cs" />
+    <Compile Include="Authentication\Model\LoginNoFollow.cs" />
+    <Compile Include="Authentication\Model\ProlongData.cs" />
+    <Compile Include="Authentication\Requests\LoginRequest.cs" />
+    <Compile Include="Authentication\Requests\LogoutRequest.cs" />
+    <Compile Include="Authentication\Requests\ProlongRequest.cs" />
+    <Compile Include="Authentication\Responses\LoginResponse.cs" />
+    <Compile Include="Authentication\Responses\LogoutResponse.cs" />
+    <Compile Include="Authentication\Responses\ProlongResponse.cs" />
+    <Compile Include="Clan\Ratings\ContractDefinitions.cs" />
+    <Compile Include="Clan\Ratings\Model\ClanRating.cs" />
+    <Compile Include="Clan\Ratings\Model\Enums\ExcludeReason.cs" />
+    <Compile Include="Clan\Ratings\Requests\ClanRatingDatesRequest.cs" />
+    <Compile Include="Clan\Ratings\Requests\ClanRatingNeighborsRequest.cs" />
+    <Compile Include="Clan\Ratings\Requests\ClanRatingsRequest.cs" />
+    <Compile Include="Clan\Ratings\Requests\ClanRatingTopRequest.cs" />
+    <Compile Include="Clan\Ratings\Requests\ClanRatingTypeRequest.cs" />
+    <Compile Include="Clan\Ratings\Responses\ClanRatingDatesResponse.cs" />
+    <Compile Include="Clan\Ratings\Responses\ClanRatingNeighborsResponse.cs" />
+    <Compile Include="Clan\Ratings\Responses\ClanRatingsResponse.cs" />
+    <Compile Include="Clan\Ratings\Responses\ClanRatingTopResponse.cs" />
+    <Compile Include="Clan\Ratings\Responses\ClanRatingTypeResponse.cs" />
+    <Compile Include="Common\Model\RatingEntry.cs" />
+    <Compile Include="Common\Model\RatingType.cs" />
+    <Compile Include="GlobalMap\ContractDefinitions.cs" />
+    <Compile Include="GlobalMap\Model\Enums\ProvincesLandingType.cs" />
+    <Compile Include="GlobalMap\Model\Enums\ProvincesOrderType.cs" />
+    <Compile Include="GlobalMap\Model\GlobalMapFront.cs" />
+    <Compile Include="GlobalMap\Model\GlobalMapFront.Extensions.cs">
+      <DependentUpon>GlobalMapFront.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalMap\Model\GlobalMapProvince.cs" />
+    <Compile Include="GlobalMap\Requests\GlobalMapFrontsRequest.cs" />
+    <Compile Include="GlobalMap\Requests\GlobalMapProvincesRequest.cs" />
+    <Compile Include="Players\Common\ContractDefinitions.cs" />
+    <Compile Include="Players\Common\Model\Enums\PersonalMissionProgressState.cs" />
+    <Compile Include="Players\Common\Model\Enums\PersonalReserveState.cs" />
+    <Compile Include="Players\Common\Model\PlayerAchievements.cs" />
+    <Compile Include="Players\Common\Model\PlayerInformation.cs" />
+    <Compile Include="Players\Common\Model\PlayerInformation.Private.cs">
+      <DependentUpon>PlayerInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Players\Common\Model\PlayerInformation.Private.GroupedContacts.cs">
+      <DependentUpon>PlayerInformation.Private.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Players\Common\Model\PlayerInformation.Private.PersonalReserve.cs">
+      <DependentUpon>PlayerInformation.Private.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Players\Common\Model\PlayerInformation.Private.RentalVehicle.cs">
+      <DependentUpon>PlayerInformation.Private.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Players\Common\Model\PlayerInformation.Private.Restrictions.cs">
+      <DependentUpon>PlayerInformation.Private.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Players\Common\Model\PlayerInformation.Statistics.cs">
+      <DependentUpon>PlayerInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Players\Common\Model\PlayerListEntry.cs" />
+    <Compile Include="Players\Common\Model\PlayerVehicleEntry.cs" />
+    <Compile Include="Players\Common\Model\PlayerVehicleEntry.Statistics.cs">
+      <DependentUpon>PlayerVehicleEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Players\Common\Requests\PlayerAchievementsRequest.cs" />
+    <Compile Include="Players\Common\Requests\PlayerInformationRequest.cs" />
+    <Compile Include="Players\Common\Requests\PlayerListRequest.cs" />
+    <Compile Include="Players\Common\Requests\PlayerVehiclesRequest.cs" />
+    <Compile Include="Players\Common\Responses\PlayerAchievementsResponse.cs" />
+    <Compile Include="Players\Common\Responses\PlayerInformationResponse.cs" />
+    <Compile Include="Players\Common\Responses\PlayerListResponse.cs" />
+    <Compile Include="Players\Common\Responses\PlayerVehiclesResponse.cs" />
+    <Compile Include="Players\Ratings\ContractDefinitions.cs" />
+    <Compile Include="Common\Model\RatingDates.cs" />
+    <Compile Include="Players\Ratings\Model\PlayerRating.cs" />
+    <Compile Include="Players\Ratings\Model\PlayerRatingType.cs" />
+    <Compile Include="Players\Ratings\Requests\PlayerRatingBattleTypes.cs" />
+    <Compile Include="Players\Ratings\Requests\PlayerRatingDatesRequest.cs" />
+    <Compile Include="Players\Ratings\Requests\PlayerRatingNeighborsRequest.cs" />
+    <Compile Include="Players\Ratings\Requests\PlayerRatingsRequest.cs" />
+    <Compile Include="Players\Ratings\Requests\PlayerRatingTopRequest.cs" />
+    <Compile Include="Players\Ratings\Requests\PlayerRatingTypeRequest.cs" />
+    <Compile Include="Players\Ratings\Responses\PlayerRatingDatesResponse.cs" />
+    <Compile Include="Players\Ratings\Responses\PlayerRatingNeighborsResponse.cs" />
+    <Compile Include="Players\Ratings\Responses\PlayerRatingsResponse.cs" />
+    <Compile Include="Players\Ratings\Responses\PlayerRatingTopResponse.cs" />
+    <Compile Include="Players\Ratings\Responses\PlayerRatingTypeResponse.cs" />
+    <Compile Include="Players\Vehicles\ContractDefinitions.cs" />
+    <Compile Include="Players\Vehicles\Model\PlayerVehicleAchievements.cs" />
+    <Compile Include="Players\Vehicles\Model\PlayerVehicleStatistics.cs" />
+    <Compile Include="Common\Model\Statistics.cs" />
+    <Compile Include="Players\Vehicles\Requests\PlayerVehicleAchievementsRequest.cs" />
+    <Compile Include="Players\Vehicles\Requests\PlayerVehicleStatisticsRequest.cs" />
+    <Compile Include="Players\Vehicles\Responses\PlayerVehicleAchievementsResponse.cs" />
+    <Compile Include="Players\Vehicles\Responses\PlayerVehicleStatisticsResponse.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegularTeam\ContractDefinitions.cs" />
+    <Compile Include="RegularTeam\Model\Emblems.cs" />
+    <Compile Include="RegularTeam\Model\Enums\RegularTeamOrderType.cs" />
+    <Compile Include="RegularTeam\Model\Ladder.cs" />
+    <Compile Include="RegularTeam\Model\RegularTeam.cs" />
+    <Compile Include="RegularTeam\Model\RegularTeamInformation.cs" />
+    <Compile Include="RegularTeam\Model\RegularTeamPlayer.cs" />
+    <Compile Include="RegularTeam\Requests\RegularTeamInformationRequest.cs" />
+    <Compile Include="RegularTeam\Requests\RegularTeamListRequest.cs" />
+    <Compile Include="RegularTeam\Responses\RegularTeamInformationResponse.cs" />
+    <Compile Include="RegularTeam\Responses\RegularTeamListResponse.cs" />
+    <Compile Include="Stronghold\ContractDefinitions.cs" />
+    <Compile Include="Stronghold\Model\BuildingDescription.cs" />
+    <Compile Include="Stronghold\Model\ClanReserveDescription.cs" />
+    <Compile Include="Stronghold\Model\StrongholdInformation.BuildingInformation.cs">
+      <DependentUpon>StrongholdInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stronghold\Model\StrongholdInformation.cs" />
+    <Compile Include="Stronghold\Model\StrongholdInformation.DefenseInformation.cs">
+      <DependentUpon>StrongholdInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stronghold\Model\StrongholdInformation.Private.BuildingInformation.cs">
+      <DependentUpon>StrongholdInformation.Private.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stronghold\Model\StrongholdInformation.Private.cs">
+      <DependentUpon>StrongholdInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stronghold\Model\StrongholdInformation.Private.SkirmishInformation.cs">
+      <DependentUpon>StrongholdInformation.Private.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stronghold\Model\StrongholdInformation.SkirmishInformation.cs">
+      <DependentUpon>StrongholdInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stronghold\Model\StrongholdPlayerStatistics.cs" />
+    <Compile Include="Stronghold\Model\StrongholdBattle.cs" />
+    <Compile Include="Stronghold\Requests\StrongholdBattlesRequest.cs" />
+    <Compile Include="Stronghold\Requests\StrongholdBuildingsRequest.cs" />
+    <Compile Include="Stronghold\Requests\StrongholdClanInformationRequest.cs" />
+    <Compile Include="Stronghold\Requests\StrongholdPlayerStatisticsRequest.cs" />
+    <Compile Include="Stronghold\Responses\StrongholdBattlesResponse.cs" />
+    <Compile Include="Stronghold\Responses\StrongholdBuildingsResponse.cs" />
+    <Compile Include="Stronghold\Responses\StrongholdClanInformationResponse.cs" />
+    <Compile Include="Stronghold\Responses\StrongholdPlayerStatisticsResponse.cs" />
+    <Compile Include="Tankopedia\ContractDefinitions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Wargaming.WebAPI\Wargaming.WebAPI.csproj">
+      <Project>{7e2f3a0b-acf6-481c-a465-b234ec6c3a89}</Project>
+      <Name>Wargaming.WebAPI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="GlobalMap\Responses\" />
+    <Folder Include="Tankopedia\Model\" />
+    <Folder Include="Tankopedia\Requests\" />
+    <Folder Include="Tankopedia\Responses\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
