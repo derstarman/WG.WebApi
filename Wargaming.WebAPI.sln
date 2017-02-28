@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wargaming.WebAPI.Common", "Wargaming.WebAPI.Common\Wargaming.WebAPI.Common.csproj", "{A178BCF0-E305-42A0-A231-1D3985737212}"
 EndProject
@@ -11,15 +11,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wargaming.WebAPI", "Wargami
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{E3E90957-AC15-46A9-BB69-F32C013BCBEB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wargaming.WebAPI.Tests", "Wargaming.WebAPI.Tests\Wargaming.WebAPI.Tests.csproj", "{4D9497FB-25E4-4B2C-A7C8-C5D127307BA7}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wargaming.WebAPI.Common.Tests", "Wargaming.WebAPI.Common.Tests\Wargaming.WebAPI.Common.Tests.csproj", "{71660D53-3846-4393-970D-45AD1BC3DBD7}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wargaming.WebAPI.WoT.Tests", "Wargaming.WebAPI.WoT.Tests\Wargaming.WebAPI.WoT.Tests.csproj", "{67B8969B-D8C8-43A3-99E8-98E317A778C6}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Efficiency", "Efficiency", "{0FF732BA-B626-4A67-819E-95854AEF2728}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WNEfficiency", "WNEfficiency\WNEfficiency.csproj", "{6BF400E2-D9C9-41E1-82F1-24B213BE34B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wargaming.WebAPI.Common.Tests", "Wargaming.WebAPI.Tests\Wargaming.WebAPI.Common.Tests\Wargaming.WebAPI.Common.Tests.csproj", "{71660D53-3846-4393-970D-45AD1BC3DBD7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wargaming.WebAPI.Tests", "Wargaming.WebAPI.Tests\Wargaming.WebAPI.Tests\Wargaming.WebAPI.Tests.csproj", "{4D9497FB-25E4-4B2C-A7C8-C5D127307BA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wargaming.WebAPI.WoT.Tests", "Wargaming.WebAPI.Tests\Wargaming.WebAPI.WoT.Tests\Wargaming.WebAPI.WoT.Tests.csproj", "{67B8969B-D8C8-43A3-99E8-98E317A778C6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,30 +39,30 @@ Global
 		{7E2F3A0B-ACF6-481C-A465-B234EC6C3A89}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7E2F3A0B-ACF6-481C-A465-B234EC6C3A89}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7E2F3A0B-ACF6-481C-A465-B234EC6C3A89}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4D9497FB-25E4-4B2C-A7C8-C5D127307BA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4D9497FB-25E4-4B2C-A7C8-C5D127307BA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4D9497FB-25E4-4B2C-A7C8-C5D127307BA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4D9497FB-25E4-4B2C-A7C8-C5D127307BA7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{71660D53-3846-4393-970D-45AD1BC3DBD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{71660D53-3846-4393-970D-45AD1BC3DBD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{71660D53-3846-4393-970D-45AD1BC3DBD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{71660D53-3846-4393-970D-45AD1BC3DBD7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{67B8969B-D8C8-43A3-99E8-98E317A778C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{67B8969B-D8C8-43A3-99E8-98E317A778C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{67B8969B-D8C8-43A3-99E8-98E317A778C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{67B8969B-D8C8-43A3-99E8-98E317A778C6}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6BF400E2-D9C9-41E1-82F1-24B213BE34B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6BF400E2-D9C9-41E1-82F1-24B213BE34B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6BF400E2-D9C9-41E1-82F1-24B213BE34B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6BF400E2-D9C9-41E1-82F1-24B213BE34B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71660D53-3846-4393-970D-45AD1BC3DBD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71660D53-3846-4393-970D-45AD1BC3DBD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71660D53-3846-4393-970D-45AD1BC3DBD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71660D53-3846-4393-970D-45AD1BC3DBD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D9497FB-25E4-4B2C-A7C8-C5D127307BA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D9497FB-25E4-4B2C-A7C8-C5D127307BA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D9497FB-25E4-4B2C-A7C8-C5D127307BA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D9497FB-25E4-4B2C-A7C8-C5D127307BA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67B8969B-D8C8-43A3-99E8-98E317A778C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67B8969B-D8C8-43A3-99E8-98E317A778C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67B8969B-D8C8-43A3-99E8-98E317A778C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67B8969B-D8C8-43A3-99E8-98E317A778C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{4D9497FB-25E4-4B2C-A7C8-C5D127307BA7} = {E3E90957-AC15-46A9-BB69-F32C013BCBEB}
-		{71660D53-3846-4393-970D-45AD1BC3DBD7} = {E3E90957-AC15-46A9-BB69-F32C013BCBEB}
-		{67B8969B-D8C8-43A3-99E8-98E317A778C6} = {E3E90957-AC15-46A9-BB69-F32C013BCBEB}
 		{6BF400E2-D9C9-41E1-82F1-24B213BE34B2} = {0FF732BA-B626-4A67-819E-95854AEF2728}
+		{71660D53-3846-4393-970D-45AD1BC3DBD7} = {E3E90957-AC15-46A9-BB69-F32C013BCBEB}
+		{4D9497FB-25E4-4B2C-A7C8-C5D127307BA7} = {E3E90957-AC15-46A9-BB69-F32C013BCBEB}
+		{67B8969B-D8C8-43A3-99E8-98E317A778C6} = {E3E90957-AC15-46A9-BB69-F32C013BCBEB}
 	EndGlobalSection
 EndGlobal
