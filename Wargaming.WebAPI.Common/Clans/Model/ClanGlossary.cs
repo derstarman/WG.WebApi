@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.Linq;
-using Wargaming.WebAPI.Enums;
+using Wargaming.WebAPI.Common.Enums;
 
 namespace Wargaming.WebAPI.Common.Model
 {

@@ -16,7 +16,7 @@ namespace Wargaming.WebAPI.Tests
         {
             var request = new BaseRequest();
             request.Language = Languages.DE;
-            request.ApplicationId = "e9e92a3ed6724f0fc66f1fc0b309b221";
+            request.ApplicationId = TestConstants.TestApplicationId;
             request.AccessToken = "Token";
             request.RequestedFields = new List<string> { "Dummy" };
 

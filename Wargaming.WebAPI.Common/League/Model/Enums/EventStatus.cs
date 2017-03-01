@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Wargaming.WebAPI.Enums
+namespace Wargaming.WebAPI.Common.Enums
 {
     public enum EventStatus
     {

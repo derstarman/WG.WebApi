@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Wargaming.WebAPI.Common.Requests;
 using Wargaming.WebAPI.Common.Responses;
 using Wargaming.WebAPI.Enums;
+using Wargaming.WebAPI.Tests;
 
 namespace Wargaming.WebAPI.Common.Tests
 {
@@ -33,7 +34,7 @@ namespace Wargaming.WebAPI.Common.Tests
         {            
             var response = default(ServerListResponse);
             var request = new ServerListRequest();
-            request.ApplicationId = "e9e92a3ed6724f0fc66f1fc0b309b221";
+            request.ApplicationId = TestConstants.TestApplicationId;
 
             Task<ServerListResponse> task = request.Execute(Servers.EU);
             task.Wait();
@@ -51,7 +52,7 @@ namespace Wargaming.WebAPI.Common.Tests
         {
             var response = default(ServerListResponse);
             var request = new ServerListRequest();
-            request.ApplicationId = "e9e92a3ed6724f0fc66f1fc0b309b221";
+            request.ApplicationId = TestConstants.TestApplicationId;
             request.RequestedGames.Add(Environments.WOT);
 
             Task<ServerListResponse> task = request.Execute(Servers.EU);

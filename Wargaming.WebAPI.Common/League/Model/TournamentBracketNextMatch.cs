@@ -1,5 +1,5 @@
 ﻿using Newtonsoft.Json;
-using Wargaming.WebAPI.Enums;
+using Wargaming.WebAPI.Common.Enums;
 
 namespace Wargaming.WebAPI.Common.Model
 {

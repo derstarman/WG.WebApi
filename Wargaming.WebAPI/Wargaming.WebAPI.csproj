@@ -47,9 +47,6 @@
     <Compile Include="Enums\MasteryBadge.cs" />
     <Compile Include="Extensions\ConverterExtensions.cs" />
     <Compile Include="Enums\Environments.cs" />
-    <Compile Include="Enums\EventStatus.cs" />
-    <Compile Include="Enums\MatchPosition.cs" />
-    <Compile Include="Enums\Roles.cs" />
     <Compile Include="Enums\SearchType.cs" />
     <Compile Include="Enums\Servers.cs" />
     <Compile Include="Extensions\TypeInfoExtensions.cs" />

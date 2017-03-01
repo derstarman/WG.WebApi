@@ -6,7 +6,7 @@ namespace WNEfficiency
 {
 	public static class WNEfficiencyClient
 	{
-		public static int CURRENT_VERSION { get; set; } = 26;
+		public static int CURRENT_VERSION { get; set; } = 29;
 
 		public static async Task<WNEfficiencyResult> GetExpectedValuesAsync(int? version = null)
 		{

@@ -56,6 +56,7 @@
     <Compile Include="Clans\Model\ClanMemberInformation.cs" />
     <Compile Include="Clans\Model\ClanMessageBoardEntry.cs" />
     <Compile Include="Clans\Model\ClanPrivateInformation.cs" />
+    <Compile Include="Clans\Model\Enums\Roles.cs" />
     <Compile Include="Clans\Requests\ClanGlossaryRequest.cs" />
     <Compile Include="Clans\Requests\ClanInformationRequest.cs" />
     <Compile Include="Clans\Requests\ClanListRequest.cs" />
@@ -66,6 +67,9 @@
     <Compile Include="Clans\Responses\ClanListResponse.cs" />
     <Compile Include="Clans\Responses\ClanMemberInfoResponse.cs" />
     <Compile Include="Clans\Responses\ClanMessageBoardResponse.cs" />
+    <Compile Include="League\ContractDefinitions.cs" />
+    <Compile Include="League\Model\Enums\EventStatus.cs" />
+    <Compile Include="League\Model\Enums\MatchPosition.cs" />
     <Compile Include="League\Model\Enums\StatisticsOrderType.cs" />
     <Compile Include="League\Model\Enums\TeamSearchType.cs" />
     <Compile Include="League\Model\Enums\TournamentType.cs" />
@@ -110,7 +114,6 @@
     <Compile Include="Servers\Model\Server.cs" />
     <Compile Include="Servers\Requests\ServerListRequest.cs" />
     <Compile Include="Servers\Responses\ServerListResponse.cs" />
-    <Compile Include="League\ContractDefinitions.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

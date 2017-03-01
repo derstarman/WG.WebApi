@@ -54,6 +54,9 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="..\..\Constants.cs">
+      <Link>Constants.cs</Link>
+    </Compile>
     <Compile Include="ServersTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

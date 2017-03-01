@@ -55,6 +55,9 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="..\..\Constants.cs">
+      <Link>Constants.cs</Link>
+    </Compile>
     <Compile Include="SerializerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
