@@ -72,6 +72,11 @@
     <Compile Include="Servers\Model\Server.cs" />
     <Compile Include="Servers\Requests\ServerListRequest.cs" />
     <Compile Include="Servers\Responses\ServerListResponse.cs" />
+    <Compile Include="WGTV\ContractDefinitions.cs" />
+    <Compile Include="WGTV\Model\Tag.cs" />
+    <Compile Include="WGTV\Model\Tags.cs" />
+    <Compile Include="WGTV\Requests\TagsRequest.cs" />
+    <Compile Include="WGTV\Responses\TagsResponse.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
